@@ -1,5 +1,7 @@
 package baekjoon_while;
 
+import java.util.Scanner;
+
 public class No1110 {
 
 	public static void main(String[] args) {
@@ -14,19 +16,38 @@ public class No1110 {
 		
 		//배열 이용해야할 것 같은데
 		
-		int a = 2;
-		int b = 6;
-		int c = 0; //첫 총합
-		int k[] = new int[a]; //가변 숫자
-		int k1[] = new int[b]; //가변 숫자 뒷자리 
+		Scanner scanner = new Scanner(System.in);
 		
+		int i =0;
+		int j = scanner.nextInt();
+		int count =0;
+
+	//	int k[] = new int[4]; //첫 숫자
+		//k1 = i+1
+	
+		//k3 = k2 + 1
+
+		int k1 = j/10;
+		int k2 = j%10;
 		
-		for(int i =0; i<100 ; i++) {
-			c = a+b;
+		int h=0;
+		scanner.close();
+		while(true) {
+			
+			count++;
+			h = k2;
+			k2 = (k1 +k2)%10;
+			k1 = h;
+			if(j == h*10 + k2  ) {
+				System.out.println(count);
+				break;
+			}
+			i++;
 			
 		}
 		
 		
 	}
-
 }
+
+
