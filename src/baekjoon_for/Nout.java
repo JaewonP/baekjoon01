@@ -9,6 +9,9 @@ public class Nout {
 		
 		int N = scanner.nextInt(); 
 
+		char str[] = {'d', 'c'};
+		
+		
 		
 		for(int i =1; i<= N ; i++) {
 			System.out.println(i);
