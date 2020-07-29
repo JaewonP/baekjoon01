@@ -1,3 +1,4 @@
+package baekjoon_while;
 
 public class N2577 {
 
